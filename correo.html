@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table
+{
+border:2px solid grey;
+}
+</style>
+</head>
+<body>
+<table  cellspacing="5" >
+<td>
+<div id="container" style="width:560px">
+
+<div id="header" style="background-color:#FFFFFF;">
+<h1 style="margin-bottom:1;">
+<img border="0" src="http://www.bykom.com/auxiliares_bykom/vencimiento.jpg" width="551" height="67" /></h1></div>
+
+<div id="menu" style="background-color:#FFFFFF;width:560px;float:left;">
+<b>Estimado Sr/a.:</b><br>
+<<_CUENTA_NOMBRE>><br>
+<br>
+Le informamos su próximo vencimiento en la cuenta <<_CUENTA_NUMERO>> <br><br></div>
+
+<div id="content" style="background-color:#FFFFFF;width:560px;float:left; border:0px solid">
+
+   <table border="0"; cellspacing="0"; cellpadding="5";>
+   <tr style="background-color:#C0C0C0;">
+     <td > </td>
+     <td><center>Detalle del comprobante</center></td>
+   </tr>
+   <tr style="background-color:#F0F0F0;" >
+     <td><b>Fecha de la factura:</b></td>
+     <td style=width:200px><center><<DTOC(_FACTURA_FECHA)>></center></td>
+   </tr>
+   <tr style="background-color:#F0F0F0;" >
+     <td><b>Vencimiento de la factura:</b></td>
+     <td style=width:200px><center><<DTOC(_FACTURA_VENCIMIENTO)>></center></td>
+   </tr>
+   <tr >
+     <td><b>Monto de la factura:</b></td>
+     <td><center><b><<TRANSFORM(_FACTURA_IMPORTE, "999,999,999.99")>></center></b></td>
+   </tr>
+   <tr style="background-color:#F0F0F0;">
+     <td><b>Número de factura:</b></td>
+     <td><center><b><<_FACTURA_NUMERO>></center></b></td>
+   </tr>
+   </table>
+<br>Gracias por utilizar nuestro servicios.<br>
+<br>Atentamente,<br>
+<br>Departamento de Atención al Cliente<br>
+</div>
+
+</div>
+</td>
+</table>
+ 
+</body>
+</html>
